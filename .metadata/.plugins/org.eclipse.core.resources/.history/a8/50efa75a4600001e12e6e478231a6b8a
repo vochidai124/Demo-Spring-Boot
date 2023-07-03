@@ -1,0 +1,32 @@
+package Hello.com;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+	
+    public static void main(String[] args) {
+    	
+    	//Viết chương trình Java để tìm số lớn nhất trong ba số nguyên và in kết quả ra màn hình.
+    	
+    	
+    	
+        //Viết chương trình Java để tính tổng hai số nguyên và in kết quả ra màn hình.
+    	HelloWorld hw = new HelloWorld();
+    	
+    	System.out.println("Please input two nubmer integer");
+    	Scanner sc = new Scanner(System.in);
+    	System.out.print("a = ");
+    	int a = sc.nextInt();
+    	sc.nextLine();
+    	System.out.print("b = ");
+    	int b = sc.nextInt();  
+    	System.out.println(hw.SumTwoNum(a,b));
+    }
+    
+    public Integer SumTwoNum(int a, int b) {
+    	int sum;
+    	sum = a+b;
+    	return sum;
+    }
+   
+}
