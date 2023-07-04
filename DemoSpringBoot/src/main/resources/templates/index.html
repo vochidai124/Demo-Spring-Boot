@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Management</title>
+</head>
+<body>
+    <h1>Product Management</h1>
+
+    <!-- Form for adding a new product -->
+    <h2>Add Product</h2>
+    <form id="addProductForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required><br>
+
+        <button type="submit">Add Product</button>
+    </form>
+
+    <!-- Table for displaying products -->
+    <h2>Product List</h2>
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Product rows will be dynamically populated here -->
+        </tbody>
+    </table>
+
+    <!-- Form for editing a product -->
+    <h2>Edit Product</h2>
+    <form id="editProductForm" style="display: none;">
+        <input type="hidden" id="editId" name="id">
+
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" name="name" required><br>
+
+        <label for="editPrice">Price:</label>
+        <input type="number" id="editPrice" name="price" required><br>
+
+        <button type="submit">Update Product</button>
+        <button type="button" onclick="closeEditForm()">Cancel</button>
+    </form>
+
+    <script>
+        // Function to send a POST request to add a new product
+        function addProduct(event) {
+            event.preventDefault();
+            const form = document.getElementById("addProductForm");
+            const name = form.elements["name"].value;
+            const price = form.elements["price"].value;
+            const product = { name, price };
+
+            fetch("/products", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(product),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Refresh the product list
+                getProductList();
+                // Clear the form
+                form.reset();
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+        }
+
+        // Function to send a GET request to retrieve the product list
+        function getProductList() {
+            fetch("/products")
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#productTable tbody");
+                tableBody.innerHTML = "";
+
+                data.forEach(product => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${product.id}</td>
+                        <td>${product.name}</td>
+                        <td>${product.price}</td>
+                        <td>
+                            <button onclick="deleteProduct(${product.id})">Delete</button>
+                            <button onclick="openEditForm(${product.id}, '${product.name}', ${product.price})">Edit</button>
+                        </td>
+                    `;
