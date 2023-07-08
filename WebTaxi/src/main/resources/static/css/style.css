@@ -1,182 +1,221 @@
+/* CSS cho phần ảnh */
 .img1 {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
 }
-.pr{
-	float: left;
-	width: 50%;
-}
-#container-1{
-	width: 100%;
-    height: auto;
-	background-color: #daae2c;
-}
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-#onaas{
-	text-indent: 50px;
-	padding: 30px;
-	background-color: #daae2c;
-}
-#container-2{
+
+/* CSS cho phần dịch vụ */
+#container-2 {
 	margin: auto;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 }
+
+#container-2 h1 {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.element-1,  .element-2, .element-3, .element-4 {
-flex-wrap: wrap;
-text-align: center;
-padding: 10px
-}
-@media screen and (max-width: 648px) {
-.container-3{
-	width: 100%;
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
-	align-items:center;
-	background-color: #000000;
-	color: #ffffff;
+	flex-direction: row; 
+}
+
+.element-1,
+.element-2,
+.element-3,
+.element-4 {
+	flex-basis: auto;
+	padding: 20px;
+	box-sizing: border-box;
 	text-align: center;
 }
-}
-.flex-container2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  background-color:black;
-}
-.element-31{
-flex-basis: 49%;
-align-self: center;
-flex-grow: 1;
-}
-.element-31,  .element-32{
-flex-wrap: wrap;
-text-align: center;
-padding: 1px;
 
+.element-1 img,
+.element-2 img,
+.element-3 img,
+.element-4 img {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 10px;
 }
-.element-32{
-flex-grow: 1;
-color: white;
-align-self: center;
+
+.element-1 h3,
+.element-2 h3,
+.element-3 h3,
+.element-4 h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
 }
-.u{
-width: 100%;
-}
-a {
-	color: #ffffff;
-	text-decoration: none;
-	
-}
-* {margin: auto;}
-.pop{
+
+/* CSS cho phần đánh giá */
+.pop {
 	background-image: url(fon.jpg);
 	width: 100%;
 	height: 100%;
 }
 
-#f5{
+.koguvcavis-varazdel {
+	padding: 38px 0;
+	background: #EBBC31;
+	text-align: center;
+}
+
+.sestim-donials {
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 20px;
+}
+
+.sagestim-lonials {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.vemotau-vokusipol {
+	flex: 33.33%;
+	max-width: 33.33%;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.testimonial {
+	background: #f9f4f4;
+	padding: 28px;
+}
+
+.testimonial img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.gecedanam {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+@media screen and (max-width:960px) {
+	.vemotau-vokusipol {
+		flex: 100%;
+		max-width: 80%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.vemotau-vokusipol {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+/* CSS cho phần liên hệ và việc làm */
+.flex-container3 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.element-41 {
+	flex-basis: 35%;
+	align-self: center;
+	flex-grow: 1;
+}
+
+.element-41,
+.element-42 {
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 1px;
+}
+
+.element-42 {
+	flex-grow: 1;
+	align-self: center;
+	order: -1;
+}
+
+/* CSS cho các phần cố định trên màn hình */
+.top-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.top-right a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.top-right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* CSS cho các phần khác */
+.img1 {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.pr {
+	float: left;
+	width: 50%;
+}
+
+#onaas {
+	text-indent: 50px;
+	padding: 30px;
+	background-color: #daae2c;
+}
+
+.u {
+	width: 100%;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+* {
+	margin: auto;
+}
+
+.pop {
+	background-image: url(fon.jpg);
+	width: 100%;
+	height: 100%;
+}
+
+#f5 {
 	padding: 10px;
 	background-color: #000000;
 	color: #ffffff;
-	display:flex;
-	justify-content: space-between;;
+	display: flex;
+	justify-content: space-between;
 }
-.koguvcavis-varazdel {
-  padding: 38px 0;
-  background: #EBBC31;
-  text-align: center;
-}
-.sestim-donials{
-  max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
-}
-.sagestim-lonials{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.vemotau-vokusipol{
-  flex: 33.33%;
-  max-width: 33.33%;
-  box-sizing: border-box;
-  padding: 15px;
-}
-.testimonial {
-  background: #f9f4f4;
-  padding: 28px;
-}
-.testimonial img{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.gecedanam{
-  font-size: 20px;
-  text-transform: uppercase;
-  margin: 20px 0;
-}
-@media screen and (max-width:960px) {
-.vemotau-vokusipol{
-  flex: 100%;
-  max-width: 80%;
-}
-}
-@media screen and (max-width:600px) {
-.vemotau-vokusipol{
-  flex: 100%;
-  max-width: 100%;
-}
-}
-.flex-container3 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-.element-41{
-flex-basis: 35%;
-align-self: center;
-flex-grow: 1;
-}
-.element-41,  .element-42{
-flex-wrap: wrap;
-text-align: center;
-padding: 1px;
 
-}
-.element-42{
-flex-grow: 1;
-align-self: center;
-order: -1;
-}
-button{
-background-color:#555555;
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-}
-.modal{
+.modal {
 	font-family: "Calibri";
 	position: fixed;
 	display: none;
@@ -185,29 +224,183 @@ font-size: 16px;
 	top: 0;
 	width: 100%;
 	overflow: auto;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 }
-.modal .modal_content{
-	 background-color: #fefefe;
-	 margin: 15% auto;
-	 padding: 20px;
-	 border: 1px solid #888;
-	 width: 80%;
-	 z-index: 9999 ;
+
+.modal .modal_content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	z-index: 9999;
 }
-.modal .modal_content .close_modal_window{
+
+.modal .modal_content .close_modal_window {
 	color: #aaa;
-	font-size:40px;
+	font-size: 40px;
 	font-weight: bold;
-	cursor: pointer; 
+	cursor: pointer;
 }
-.modal_inner{
-	display:flex;
+
+.modal_inner {
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 15px;
 }
-.modal_title{
-	font-size:25px;
+
+.modal_title {
+	font-size: 25px;
 	font-weight: bold;
+}
+
+/* CSS cho phần đầu trang */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #daae2c;
+}
+
+.logo {
+	margin-left: 150px;
+}
+
+.logo img {
+	  width: 80px;
+	  height: auto;
+	  display: block;
+	  margin: 10px;
+}
+
+.logo img:hover {
+  opacity: 0.8;
+}
+
+nav.main-nav {
+	margin-right: 100px;
+}
+
+nav.main-nav ul {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+nav.main-nav ul li {
+	margin-left: 20px;
+	position: relative;
+}
+
+nav.main-nav ul li:first-child {
+	margin-left: 0;
+}
+
+nav.main-nav ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #333;
+}
+
+nav.main-nav ul li a i {
+	margin-right: 5px;
+}
+
+nav.main-nav ul li.blog-item {
+	display: flex;
+	align-items: center;
+}
+
+nav.main-nav ul li.blog-item a {
+	display: flex;
+	align-items: center;
+	color: #333;
+}
+
+nav.main-nav ul li.blog-item a i {
+	margin-right: 5px;
+	font-size: 18px;
+}
+
+nav.main-nav ul li.blog-item ul.blog-submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 10px;
+	background-color: rgb(255, 255, 128);
+	z-index: 1;
+	width: max-content;
+}
+
+nav.main-nav ul li.blog-item:hover ul.blog-submenu {
+	display: block;
+}
+
+nav.main-nav ul li.blog-item ul.blog-submenu li {
+	margin: 10px;
+}
+/* CSS cho phần liên hệ */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#contact .element-31 {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#contact .element-31 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#contact .element-32 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact .contact-info h1 {
+  font-size: 24px;
+}
+
+#contact .contact-info h2 {
+  font-size: 18px;
+}
+
+#contact .map-container {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact .element-31,
+  #contact .element-32 {
+    flex: none;
+  }
+
+  #contact .element-31 img {
+    height: 100%;
+    width: auto;
+  }
 }
