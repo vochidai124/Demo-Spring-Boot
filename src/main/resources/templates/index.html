@@ -2,177 +2,645 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Taxi Nghĩa</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-		integrity="sha512-...YOUR-INTEGRITY-CODE...=" crossorigin="anonymous" />
-	<meta name="viewport" content="width=device-width">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
+  <title>Taxi Nghĩa</title>
+
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
-	<div id="container-1">
-		<header>
-			<div class="logo">
-				<h1><a href="#"><img src="images/logo1.png" alt="Hình ảnh"></a></h1>
-			</div>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#"><i class="fas fa-home"></i> Trang chủ</a></li>
-					<li><a href="#"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
-					<li><a href="#"><i class="fas fa-car"></i> Dịch vụ</a></li>
-					<li class="blog-item">
-						<a href="#"><i class="fas fa-book"></i> Blog</a>
-						<ul class="blog-submenu">
-							<li><a href="#">Bài viết 1</a></li>
-							<li><a href="#">Bài viết 2</a></li>
-							<li><a href="#">Bài viết 3</a></li>
-						</ul>
-					</li>
-					<li><a href="#"><i class="fas fa-envelope"></i> Liên hệ</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div>
-			<img src="images/img.png" alt="Hình ảnh" class="img1">
-			<div class="top-right">
-				<a href="tel:+7 (9273) 29 99 09"><img src="images/phone.jpg" alt="Hình ảnh"></a>
-				<a href="https://wa.me/892732999098"><img src="images/zalo.png" alt="Hình ảnh"></a>
-				<a href="https://vk.com/public180287354"><img src="images/tiktok.png" alt="Hình ảnh"></a>
-			</div>
-		</div>
-		<div id="onaas">
-			<h1>Taxi Nghĩa - Nhanh chóng, tiết kiệm, đáng tin cậy!</h1>
-			<p>Chúng tôi đã hoạt động trên thị trường vận chuyển hành khách hơn 10 năm.
-				Trong thời gian đó, chúng tôi đã giành được sự tin tưởng và tôn trọng từ hành khách và tài xế.
-				Điều này được chứng minh bằng số lượng đánh giá tích cực và nhận xét,
-				và chúng tôi chân thành cảm kích với mọi người.</p>
-			<p>Taxi Nghĩa cam kết chú trọng vào việc lựa chọn tài xế một cách chuyên nghiệp và nghiêm túc,
-				đảm bảo cung cấp những chuyến đi an lành và thoải mái cho cả trẻ em và người lớn.
-				Chúng tôi cũng cung cấp ghế trẻ em để đảm bảo an toàn cho hành khách nhỏ tuổi.</p>
-		</div>
-	</div>
 
-	<div id="container-2">
-		<h1>Dịch vụ của chúng tôi</h1>
-		<div class="flex-container">
-			<div class="element-1"><img src="images/img2-1.png" alt="Hình ảnh"><br>Luôn kết nối<br>Nhận đặt trước</div>
-			<div class="element-2"><img src="images/img2-2.png" alt="Hình ảnh"><br>Đón và trả khách tại địa chỉ</div>
-			<div class="element-3"><img src="images/img2-3.png" alt="Hình ảnh"><br>Dịch vụ giao hàng<br>Giao bất kỳ hàng
-				hóa nào có thể chứa trong xe</div>
-			<div class="element-4"><img src="images/img2-4.png" alt="Hình ảnh"><br>Cung cấp các tài liệu báo cáo<br>Hóa
-				đơn trực tuyến với mã QR cho tất cả!</div>
-		</div>
-	</div>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index">
+            <span>
+              TAXI NHƠN TRẠCH
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index">Trang Chủ<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about">Giới Thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service">Dịch Vụ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news">Tin Tức</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login">Đăng Nhập</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7 ">
+            <div class="box">
+              <div class="detail-box">
+                <h4>
+                  Chào Mừng Đến
+                </h4>
+                <h1>
+                  TAXI NHƠN TRẠCH
+                </h1>
+              </div>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                    <div class="img-box">
+                      <img src="images/slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                      <img src="images/slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                      <img src="images/slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                      <img src="images/slider-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-box">
+                      <img src="images/slider-img.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="btn-box">
+                <a href="" class="btn-1">
+                  Đọc Thêm
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 ">
+            <div class="slider_form">
+              <h4>
+                Gọi Xe Ngay
+              </h4>
+              <form action="">
+                <input type="text" placeholder="Họ Tên" required>
+                <input type="text" placeholder="Điểm Đón" required>
+                <input type="text" placeholder="Điểm Đến" required>
+                <input type="text" placeholder="Thời Gian Đón" required>
+                <select name="carType" required>
+	                <option value="" disabled selected>Chọn Loại Xe</option>
+	                <option value="4">Xe 4 Chỗ</option>
+	                <option value="7">Xe 7 Chỗ</option>
+	                <option value="16">Xe 16 Chỗ</option>
+            	</select>
+                <input type="text" placeholder="Ghi Chú">
+                <div class="btm_input">
+                  <input type="tel" name="phone" placeholder="Số Điện Thoại" required pattern="[0-9]{10}" title="Vui lòng nhập số điện thoại hợp lệ.">
+                  <button>Đặt Ngay</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 offset-lg-2 offset-md-1">
+          <div class="detail-box">
+            <h2>
+				Về <br>
+              	Chúng Tôi
+            </h2>
+            <p>
+              Chúng tôi xin phục vụ quý khách với dịch xe 4 chỗ, 7 chỗ và 16 chỗ.</br>
+			  Đảm bảo giá rẻ, dịch vụ tốt, lái xe an toàn chất lượng.</br>
+			  Đảm bảo đúng hẹn và an toàn trên mọi nẻo đường.
+            </p>
+            <a href="">
+              Đọc Thêm
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Về <br>
+          Dịch Vụ
+        </h2>
+      </div>
+      <div class="service_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/delivery-man.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Tài Xế Riêng
+            </h5>
+            <p>
+              Khách hàng rất hài lòng
+            </p>
+            <a href="">
+              Đọc Thêm
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/airplane.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Đưa đón sân bay
+            </h5>
+            <p>
+              Khách hàng rất hài lòng
+            </p>
+            <a href="">
+              Đọc Thêm
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/backpack.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Vận chuyển hành lý
+            </h5>
+            <p>
+              Khách hàng rất hài lòng
+            </p>
+            <a href="">
+              Đọc Thêm
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- news section -->
+
+  <section class="news_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Về <br>
+          Tin Tức
+        </h2>
+      </div>
+      <div class="news_container">
+        <div class="box">
+          <div class="date-box">
+            <h6>
+              01 Nov 2019
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="images/news-img.jpg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Eiusmod tempor incididunt
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="date-box">
+            <h6>
+              01 Nov 2019
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="images/news-img.jpg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Eiusmod tempor incididunt
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="date-box">
+            <h6>
+              01 Nov 2019
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="images/news-img.jpg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>
+              Eiusmod tempor incididunt
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end news section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Đánh<br>
+          Giá<br>
+        </h2>
+      </div>
+      <div class="client_container">
+        <div class="carousel-wrap ">
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client-1.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h3>
+                    Khang Nguyen
+                  </h3>
+                  <p>
+                    Lái xe rất an toàn và tài xế thân thiệt, tôi rất hài lòng
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client-2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h3>
+                    Thao Tran
+                  </h3>
+                  <p>
+                    Giá cả hợp lý và dịch vụ rất tốt, tôi sẽ ủng hộ lần sau
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+  <!--
+  <section class="contact_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Vấn Đề <br>
+          Câu Hỏi
+        </h2>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5  offset-md-1">
+          <div class="contact_form">
+            <h4>
+              Get In touch
+            </h4>
+            <form action="">
+              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Phone Number">
+              <input type="text" placeholder="Message" class="message_input">
+              <button>Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="images/contact-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+  <!-- end contact section -->
+
+  <!-- app section -->
+
+  <section class="app_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2>
+              Địa Chỉ
+            </h2>
+            <div class="text-box">
+              <h5>
+                Chi Tiết
+              </h5>
+              <p>
+                Huỳnh Văn Nghệ, tt. Hiệp Phước, Nhơn Trạch, Đồng Nai
+              </p>
+            </div>
+            <div class="text-box">
+              <h5>
+                Liên Hệ
+              </h5>
+              <p>
+                <a href="tel:0336541457" class="shake-effect">0336541457</a>
+              </p>
+            </div>
+            <!--
+            <div class="btn-box">
+              <a href="">
+                <img src="images/playstore.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/appstore.png" alt="">
+              </a>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <a href="https://www.google.com/maps/place/Hu%E1%BB%B3nh+V%C4%83n+Ngh%E1%BB%87,+tt.+Hi%E1%BB%87p+Ph%C6%B0%E1%BB%9Bc,+Nh%C6%A1n+Tr%E1%BA%A1ch,+%C4%90%E1%BB%93ng+Nai,+Vi%E1%BB%87t+Nam/@10.7402367,106.9401145,17.26z/data=!4m6!3m5!1s0x317518f241314eb9:0x5f0eff590915cf55!8m2!3d10.7416587!4d106.9399824!16s%2Fg%2F1233pg5yv?hl=vi-VN&entry=ttu"><img src="images/mobile.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end app section -->
+
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Vì Sao <br>
+          Chọn Chúng Tôi
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/delivery-man-white.png" alt="" class="img-1">
+            <img src="images/delivery-man-black.png" alt="" class="img-2">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Tài Xế 
+            </h5>
+            <p>
+              Tìm hiểu tài xế của bạn, lái xe an toàn và đến nơi an toàn với nhiệm vụ đảm bảo an toàn của khách hàng là trên hết
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/shield-white.png" alt="" class="img-1">
+            <img src="images/shield-black.png" alt="" class="img-2">
+          </div>
+          <div class="detail-box">
+            <h5>
+              An Toàn Và Bảo Mật
+            </h5>
+            <p>
+              Với quyết tâm an toàn của khách hàng là trên hết, chúng tôi sẽ luôn đảm bảo an toàn cho quý khách hàng
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/repairing-service-white.png" alt="" class="img-1">
+            <img src="images/repairing-service-black.png" alt="" class="img-2">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Hỗ Trợ 24x7
+            </h5>
+            <p>
+              Liên hệ với chúng tôi khi bạn có bất kỳ câu hỏi hoặc thắc mắc cần giải đáp
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding-top layout_padding2-bottom">
+    <div class="container">
+      <div class="box">
+		<!--
+        <div class="info_form">
+          <h4>
+            Subscribe Our Newsletter
+          </h4>
+          <form action="">
+            <input type="text" placeholder="Enter your email">
+            <div class="d-flex justify-content-end">
+              <button>
+
+              </button>
+            </div>
+          </form>
+        </div>
+        -->
+        <div class="info_links">
+          <ul>
+            <li class=" ">
+              <a class="" href="index">Trang Chủ<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="" href="about">Giới Thiệu</a>
+            </li>
+            <li class="">
+              <a class="" href="service">Dịch Vụ</a>
+            </li>
+            <li class="">
+              <a class="" href="news">Tin Tức</a>
+            </li>
+            <li class="">
+              <a class="" href="contact">Liên Hệ</a>
+            </li>
+            <li class="">
+              <a class="" href="login">Đăng Nhập</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info_social">
+          <div>
+            <a href="">
+              <img src="images/fb.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="images/twitter.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="images/linkedin.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="images/instagram.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <div class="container">
+      <p>
+        &copy; Đã Đăng Ký Bản Quyền 2023
+        <a href="https://html.design/">github.com</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
 
 
-	<div class="pop" id="3">
-		<div class="koguvcavis-varazdel">
-			<div class="sestim-donials">
-				<h1>Đánh giá</h1>
-				<div class="sagestim-lonials">
-					<div class="vemotau-vokusipol">
-						<div class="testimonial">
-							<img src="images/img3-1.jpg" alt="">
-							<div class="gecedanam" name="3">Irina</div>
-							<p>Tôi đã sử dụng dịch vụ taxi không phải lần đầu tiên và không có điều gì xấu
-								để nói về dịch vụ taxi. Nhân viên tử tế,
-								tài xế đúng giờ và giá cả không đắt hơn các công ty khác.</p>
-						</div>
-					</div>
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 2
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
 
-					<div class="vemotau-vokusipol">
-						<div class="testimonial">
-							<img src="images/img3-2.jpg" alt="">
-							<div class="gecedanam">Ruslan Tuktarov</div>
-							<p>Xe sạch sẽ, tài xế thân thiện, tôi rất hài lòng với mọi thứ.</p>
-						</div>
-					</div>
-
-					<div class="vemotau-vokusipol">
-						<div class="testimonial">
-							<img src="images/img3-2.jpg" alt="">
-							<div class="gecedanam">Valeria Kamarova</div>
-							<p>Tôi rất hài lòng vì xe đến đúng giờ và tài xế rất hợp tác.
-								Giá cả cũng hợp lý.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="flex-container-contact" id="contact">
-		<div class="element-31">
-			<img src="images/img4.jpg" alt="Hình ảnh">
-		</div>
-		<div class="element-32">
-			<div class="contact-info">
-				<h1>Bạn có thể liên hệ với chúng tôi 24/7</h1>
-				<h2>
-					<a href="tel:+7 (9273) 29 99 09">8-927-329-99-09 </a><br>
-					<a href="tel:+7 (9613) 68 68 68">8-961-368-68-68</a><br>
-					<a href="https://vk.com/public180287354"><img src="images/img1-4.png" alt="Hình ảnh"></a>
-					<a href="https://wa.me/892732999098"><img src="images/img1-3.png" alt="Hình ảnh"></a>
-				</h2>
-			</div>
-			<div class="map-container">
-				<div id="map"></div>
-			</div>
-		</div>
-	</div>
-	
-	<div data-modal-window="my_modal1" class="modal">
-		<div class="modal_content">
-			<div class="modal_inner">
-				<div class="modal_title">
-					<h1>Việc làm</h1>
-				</div>
-				<div class="close_modal_window">&times;</div>
-			</div>
-			<h2>Cần tài xế có xe cá nhân cho dịch vụ vận chuyển liên tỉnh</h2>
-			<h2>Chúng tôi cung cấp:</h2>
-			<ul type="square">
-				<li>Thời gian làm việc linh hoạt hoàn toàn</li>
-				<li>Thu nhập hàng ngày từ 4.500 Ruble</li>
-				<li>Dòng đơn đều đặn</li>
-				<li>Hỗ trợ trong mọi vấn đề tranh chấp</li>
-			</ul>
-			<h2>Yêu cầu:</h2>
-			<ul type="square">
-				<li>Kinh nghiệm lái xe trên 10 năm</li>
-				<li>Chịu được áp lực</li>
-			</ul>
-			<h3>Liên hệ qua số điện thoại 89191432116</h3>
-		</div>
-	</div>
-	<div id="f5">
-		<div>
-			<a href="#onaas">
-				<p>Về chúng tôi</p>
-			</a>
-			<a href="#container-2">
-				<p>Dịch vụ của chúng tôi</p>
-			</a>
-			<a href="#3">
-				<p>Đánh giá</p>
-			</a>
-		</div>
-		<div>
-			<a href="#4">
-				<p>Liên hệ</p>
-			</a>
-			<a href="#5">
-				<p>Cơ hội việc làm</p>
-			</a>
-		</div>
-		<div id="f5">
-			<p>© 2010 - 2022 Taxi "Nghĩa" Meleuz-Ufa-Meleuz</p>
-		</div>
-		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-		<script src="js/script1.js"></script>
 </body>
 
 </html>

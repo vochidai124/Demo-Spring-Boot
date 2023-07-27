@@ -1,630 +1,124 @@
-/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+@media (max-width: 1120px) {}
 
+@media (max-width: 992px) {
+  .hero_area {
+    min-height: auto;
+  }
 
-/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+  .hero_area::before {
+    width: 100%;
+  }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-search {
-        padding: 15px 0px;
-    }
+  .slider_section .slider_form {
+    width: 100%;
+    max-width: 550px;
+    margin-top: 45px;
+    margin-bottom: 75px;
+  }
+
+  .slider_section .carousel-indicators {
+    left: 0;
+    justify-content: center;
+  }
+
+  .news_section .news_container {
+    flex-direction: column;
+  }
+
+  .news_section .news_container .box:nth-child(2) {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+
+  .contact_section .contact_form {
+    padding: 25px 15px;
+    margin: 0 auto;
+    max-width: 475px;
+  }
+
+  .why_section .why_container {
+    padding: 0;
+  }
+
+  .info_section .box {
+    width: 100%;
+  }
+
+  .footer_section p {
+    width: 100%;
+  }
 }
 
+@media (max-width: 768px) {
 
-/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+  .about_section .detail-box {
+    padding: 0;
+    margin-bottom: 45px;
+  }
 
-@media only screen and (min-width: 599px) and (max-width: 767px) {
-    .logo {
-        text-align: center;
-    }
-    .cart-content-right {
-        padding-bottom: 5px;
-    }
-    .mg {
-        margin: 0px 0px;
-    }
-    .menu-area-main {
-        height: 256px;
-        overflow-y: auto;
-    }
-    .megamenu>.row [class*="col-"] {
-        padding: 0px;
-    }
-    .menu-area-main .megamenu .men-cat {
-        padding: 0px 15px;
-    }
-    .menu-area-main .megamenu .women-cat {
-        padding: 0px 15px;
-    }
-    .menu-area-main .megamenu .el-cat {
-        padding: 0px 15px;
-    }
-    .mean-container .mean-nav ul li a.mean-expand {
-        height: 19px;
-    }
-    .category-box.women-box {
-        display: none;
-    }
-    .cart-box {
-        display: inline-block;
-        margin: 0px 30px;
-    }
-    .wish-box {
-        float: none;
-        margin: 0px 30px;
-        display: inline-block;
-    }
-    .menu-add {
-        display: none;
-    }
-    .category-box {
-        display: none;
-    }
-    .mean-container .mean-nav ul li ol {
-        padding: 0px;
-    }
-    .mean-container .mean-nav ul li a {
-        padding: 10px 20px;
-        width: 94.8%;
-    }
-    .mean-container .mean-nav ul li li a {
-        width: 92%;
-        padding: 1em 4%;
-    }
-    .mean-container .mean-nav ul li li li a {
-        width: 100%;
-    }
-    .header-search {
-        padding: 15px 0px;
-    }
-    #collapseFilter.d-md-block {
-        padding: 30px 0px;
-    }
-}
+  .about_section .detail-box::before {
+    right: -5px;
+  }
 
+  .about_section .img-box {
+    padding: 45px 0;
+  }
 
-/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+  .service_section .service_container .box:nth-child(2) {
+    margin: 45px 0;
+  }
 
-@media only screen and (min-width: 280px) and (max-width: 599px) {
-    .cart-content-right {
-        padding-bottom: 5px;
-    }
-    .megamenu>.row [class*="col-"] {
-        padding: 0px;
-    }
-    .menu-area-main .megamenu .men-cat {
-        padding: 0px 15px;
-    }
-    .menu-area-main .megamenu .women-cat {
-        padding: 0px 15px;
-    }
-    .menu-area-main .megamenu .el-cat {
-        padding: 0px 15px;
-    }
-    .mean-container .mean-nav ul li a {
-        padding: 1em 4%;
-        width: 92%;
-    }
-    .mean-container .mean-nav ul li li a {
-        width: 90%;
-        padding: 1em 5%;
-    }
-    .mean-container .sub-full.megamenu-categories ol li a {
-        padding: 5px 0px;
-        text-transform: capitalize;
-        width: 100%;
-    }
-    .megamenu .sub-full.megamenu-categories .women-box .banner-up-text a {
-        width: auto;
-        border: none;
-        float: none;
-    }
-    .menu-area-main {
-        height: 45px;
-        overflow-y: auto;
-    }
-    .mean-container .mean-nav ul li a.mean-expand {
-        top: 0;
-    }
-}
+  .service_section .service_container {
+    flex-direction: column;
+  }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+  .contact_section .img-box {
+    padding-left: 25px;
+    margin-top: 35px;
+  }
 
-    .logo {
-        width: 81%;
-    }
+  .app_section .detail-box {
+    margin-bottom: 35px;
+  }
 
-    .banner_taital {
-        width: 70%;
-        font-size: 34px;
-        line-height: 40px;
-        padding-top: 0px;
-    }
-
-    .banner_text {
-        width: 100%;
-        margin: 0px;
-    }
-
-    .banner_img {
-        width: 60%;
-        text-align: center;
-    }
-
-    .banner_section {
-        padding: 80px 0px;
-    }
-
-    .hands_text {
-        width: 81%;
-        padding-top: 0px;
-    }
-
-    .hands_text_2 {
-        width: 60%;
-        margin: 40px 50px;
-    }
-
-    .hands_text_2::after {
-        width: 90px;
-        right: -130px;
-    }
-
-    .hands_text::after {
-        width: 120px;
-        right: -110px;
-    }
-
-    .about_taital {
-        width: 100%;
-        font-size: 36px;
-    }
-
-    .about_text {
-        width: 100%;
-    }
-
-    .doctors_section {
-        background-size: cover;
-    }
-
-    .play_icon::before {
-        left: 67px;
-    }
-
-
+  .info_section .info_links ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-    #my_slider a.carousel-control-next {
-        top: 122%;
-    }
-
-    #my_slider a.carousel-control-prev {
-        top: 122%;
-    }
-
-    #main_slider a.carousel-control-prev {
-        position: absolute;
-        left: -60px;
-        right: 0px;
-        top: 105%;
-    }
-
-    #main_slider a.carousel-control-next {
-        position: absolute;
-        left: 0px;
-        right: -60px;
-        top: 105%;
-    }
-
-    .shoping_bag {
-        display: none;
-    }
-
-    .header_section {
-        background-size: cover;
-    }
-
-    .toggle_menu_1 {
-        display: block;
-        top: 5px;
-        position: relative;
-        float: right;
-    }
-
-    .menu_main {
-        display: none;
-    }
-
-    .logo {
-        width: auto;
-    }
-
-    .banner_taital {
-        font-size: 40px;
-        padding-top: 0px;
-    }
-
-    .banner_text {
-        width: 100%;
-    }
-
-    .banner_img {
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    .protect_text {
-        width: 100%;
-    }
-
-    .protect_taital {
-        font-size: 26px;
-    }
-
-    .hands_text {
-        width: 73%;
-        font-size: 22px;
-        padding-top: 30px;
-    }
-    .hands_text::after {
-        width: 120px;
-        right: -110px;
-    }
-
-    .hands_text_2 {
-        width: 75%;
-        font-size: 22px;
-        margin: 10px 0px;
-    }
-    .hands_text_2::after {
-        width: 100px;
-        right: -80px;
-    }
-
-    .about_taital {
-        width: 100%;
-        font-size: 26px;
-        padding-top: 0px;
-    }
-
-    .about_text {
-        width: 100%;
-    }
-
-    .doctor_text {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .news_section {
-        background-size: cover;
-    }
-
-    .news_taital {
-        font-size: 26px;
-    }
-
-    .news_text {
-        width: 100%;
-    }
-
-    .box_main {
-        width: 97%;
-    }
-
-    .update_taital {
-        font-size: 26px;
-    }
-
-    .update_mail {
-        width: 90%;
-    }
-
-    .doctors_section{
-        background-size: cover;
-        background-image: linear-gradient(90deg, #7d56c9 18%, rgba(76, 90, 90, 0) 4%), url(../images/doctor-bg1.png);
-    }
-
-    .play_icon::before {
-        left: 51px;
-    }
-
+@media (max-width: 576px) {
+  .news_section .news_container {
+    padding: 0;
+  }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-    #main_slider a.carousel-control-prev {
-        position: absolute;
-        left: -60px;
-        right: 0px;
-        top: 105%;
-    }
+@media (max-width: 480px) {}
 
-    #main_slider a.carousel-control-next {
-        position: absolute;
-        left: 0px;
-        right: -60px;
-        top: 105%;
-    }
+@media (max-width: 420px) {
+  .why_section .box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .shoping_bag {
-        display: none;
-    }
-
-    .header_section {
-        background-size: cover;
-    }
-
-    .toggle_menu_1 {
-        display: block;
-        top: 5px;
-        position: relative;
-        float: right;
-    }
-
-    .menu_main {
-        display: none;
-    }
-
-    .logo {
-        width: auto;
-    }
-
-    .banner_taital {
-        font-size: 40px;
-        padding-top: 0px;
-    }
-
-    .banner_text {
-        width: 100%;
-    }
-
-    .banner_img {
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    #my_slider a.carousel-control-next {
-        top: 112%;
-    }
-
-    #my_slider a.carousel-control-prev {
-        top: 112%;
-    }
-
-    .protect_text {
-        width: 100%;
-    }
-
-    .protect_taital {
-        font-size: 30px;
-    }
-
-    .hands_text_2{
-        display: none;
-    }
-
-    .hands_text{
-        display: none;
-    }
-
-    .about_section .row{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .about_taital {
-        width: 100%;
-        font-size: 30px;
-        padding-top: 0px;
-    }
-
-    .about_text {
-        width: 100%;
-    }
-
-    .about_img {
-        margin-top: 40px;
-    }
-
-    .taital_left{
-        display: none;
-    }
-
-    .taital_right {
-        width: 100%;
-        padding-left: 0px;
-    }
-
-    .doctors_section {
-        background-image: url(../images/doctor-bg1.png) !important;
-        background-size: cover;
-    }
-
-    .doctor_text {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .news_section {
-        background-size: cover;
-    }
-
-    .news_taital {
-        font-size: 30px;
-    }
-
-    .news_text {
-        width: 100%;
-    }
-
-    .box_main {
-        width: 97%;
-    }
-
-    .update_taital {
-        font-size: 30px;
-    }
-
-    .update_mail {
-        width: 100%;
-    }
+  .why_section .box .img-box {
+    margin: 0;
+    margin-bottom: 25px;
+  }
 }
 
-@media (max-width: 575px) {
-    #main_slider a.carousel-control-prev {
-        position: absolute;
-        left: -60px;
-        right: 0px;
-        top: 105%;
-    }
-
-    #main_slider a.carousel-control-next {
-        position: absolute;
-        left: 0px;
-        right: -60px;
-        top: 105%;
-    }
-
-    .shoping_bag {
-        display: none;
-    }
-
-    .header_section {
-        background-size: cover;
-    }
-
-    .toggle_menu_1 {
-        display: block;
-        top: 5px;
-        position: relative;
-        float: right;
-    }
-
-    .toggle_menu {
-    top: 8px;
-    position: relative;
-    left: 0px;
-    display: none;
+@media (max-width: 360px) {
+  .app_section .detail-box .btn-box {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-    .menu_main {
-        display: none;
-    }
-
-    .logo {
-        width: auto;
-    }
-
-    .menu_main {
-        display: none;
-    }
-
-    .banner_taital {
-        font-size: 40px;
-        padding-top: 0px;
-    }
-
-    .banner_text {
-        width: 100%;
-    }
-
-    .banner_img {
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    #my_slider a.carousel-control-next {
-        top: 112%;
-    }
-
-    #my_slider a.carousel-control-prev {
-        top: 112%;
-    }
-
-    .protect_text {
-        width: 100%;
-    }
-
-    .protect_taital {
-        font-size: 24px;
-    }
-
-    .hands_text_2{
-        display: none;
-    }
-
-    .hands_text{
-        display: none;
-    }
-
-    .about_section .row {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .about_taital {
-        width: 100%;
-        font-size: 24px;
-        padding-top: 0px;
-    }
-
-    .about_text {
-        width: 100%;
-    }
-
-    .about_img {
-        margin-top: 40px;
-    }
-
-    .taital_left{
-        display: none;
-    }
-
-    .taital_right {
-        width: 100%;
-        padding-left: 0px;
-    }
-
-    .doctors_section {
-        background-image: url(../images/doctor-bg1.png) !important;
-        background-size: cover;
-    }
-
-    .doctor_text {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .news_section {
-        background-size: cover;
-    }
-
-    .news_taital {
-        font-size: 30px;
-    }
-
-    .news_text {
-        width: 100%;
-    }
-
-    .box_main {
-        width: 97%;
-    }
-
-    .update_taital {
-        font-size: 28px;
-    }
-
-    .update_mail {
-        width: 100%;
-    }
-
-
-
-
-
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
 }
